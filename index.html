@@ -106,14 +106,16 @@
             <i class="fa-solid fa-bars"></i>
         </button>
         <a href="https://kn0x-fit.com/" target="_blank" class="flex items-center">
-            <img src="./src/assets/final_logo-removebg-preview (1).png" alt="KN0X-FIT Logo" class="h-20 md:h-24 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <!-- Adjusted mobile logo to be much smaller (h-14) -->
+            <img src="./src/assets/final_logo-removebg-preview (1).png" alt="KN0X-FIT Logo" class="h-14 w-auto" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
             <div class="hidden text-xl font-black text-gray-900 italic tracking-tighter uppercase"><span class="text-red-600">KN0X</span>-FIT</div>
         </a>
         <div class="w-10"></div> <!-- Spacer for centering -->
     </div>
 
     <!-- Mobile Horizontal Scroll Navigation (The "App" Feel) -->
-    <div class="lg:hidden sticky top-[89px] z-30 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm overflow-x-auto no-scrollbar flex items-center px-2 py-0 h-12">
+    <!-- Adjusted sticky offset to top-[65px] to match the smaller mobile header -->
+    <div class="lg:hidden sticky top-[65px] z-30 bg-white/90 backdrop-blur-sm border-b border-gray-200 shadow-sm overflow-x-auto no-scrollbar flex items-center px-2 py-0 h-12">
         <button data-view="dashboard" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Dashboard</button>
         <button data-view="week1" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Week 1</button>
         <button data-view="week2" class="mobile-tab flex-shrink-0 px-4 h-full flex items-center text-sm font-bold text-gray-500 whitespace-nowrap transition-colors">Week 2</button>
